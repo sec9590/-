@@ -1,0 +1,26 @@
+.my  h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color :  #2582b3;
+  font-weight: bold;
+}
+div p{
+  font-size: 20px;
+  color : white;
+}
+.con_style{
+  text-align: center;
+  background-color: #2582b3;
+  color : white;
+
+}
+.con_style h3{
+  color : white;
+    font-weight: bold;
+}
+#a{
+  text-decoration: none;
+}
+.maincolor{
+  color : #2582b3;
+}
