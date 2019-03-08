@@ -24,3 +24,16 @@ div p{
 .maincolor{
   color : #2582b3;
 }
+.row{
+    margin-top:40px;
+    padding: 0 10px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.panel-heading span {
+	margin-top: -20px;
+	font-size: 15px;
+}
