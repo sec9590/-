@@ -10,13 +10,15 @@
 
   <title>Creative - Start Bootstrap Theme</title>
 
-  <!-- Font Awesome Icons -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
   <!-- Google Fonts -->
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -26,32 +28,40 @@
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
 
+
+
 </head>
 
 <body id="page-top">
-  <!-- Header -->
-  <header id="header" style="background-color: #2582b3;">
-    <nav class="left">
-      <a href="#menu"><span>Menu</span></a>
-    </nav>
-    <a href="index.html" class="logo">Seeun's Introduce</a>
 
-  </header>
-
-  <!-- Menu -->
-  <nav id="menu">
-    <ul class="links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="favorite01.html">favorite-1</a></li>
-      <li><a href="favorite02.html">favorite-2</a></li>
-      <li><a href="favorite03.html">favorite-3</a></li>
-      <li><a href="bucket.html">bucket list</a></li>
-    </ul>
-
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html" style="color:#2582b3;">Seun' Introduction</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html" style="color:black">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="favorite01.html" id="favorite01" style="color: #2582b3">Favorite01</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="favorite02.html" style="color:black">Favorite02</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="favorite03.html" style="color:black">Favorite03</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <section class="page-section" id="services" style="padding-top:50px">
-    <div class="container">
+  <section class="page-section" id="favorite01" style="padding-top:50px">
+    <div class="container" >
       <h2 class="text-center mt-0" style="font-weight:bold; color:#2582b3;">I like to go to a Cafe</h2>
       <hr style="background :  #8bc8e8 ;">
       <div class="row">
@@ -74,13 +84,15 @@
     </div>
   </section>
 
+
+
   <!-- Portfolio Section -->
   <section id="portfolio">
     <div class="container-fluid p-0">
       <div class="row no-gutters">
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+          <a class="portfolio-box " href="images/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Cafe
@@ -92,8 +104,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+          <a class="portfolio-box" href="images/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-Cafe text-white-50">
                 Cafe
@@ -105,8 +117,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+          <a class="portfolio-box" href="images/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Cafe
@@ -118,8 +130,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+          <a class="portfolio-box" href="images/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/4.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Cafe
@@ -131,8 +143,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+          <a class="portfolio-box" href="images/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/5.jpg" alt="">
             <div class="portfolio-box-caption">
               <div class="project-category text-white-50">
                 Cafe
@@ -144,8 +156,8 @@
           </a>
         </div>
         <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+          <a class="portfolio-box" href="images/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="images/portfolio/thumbnails/6.jpg" alt="">
             <div class="portfolio-box-caption p-3">
               <div class="project-category text-white-50">
                 Cafe
@@ -158,26 +170,9 @@
         </div>
       </div>
     </div>
+
   </section>
 
-
-    <footer id="footer">
-      <div class="inner">
-        <h2 style="font-weight:bold">Get In Touch</h2>
-        <hr style="background :#2582b3 ;">
-        <br><br>
-
-        <ul class="actions">
-          <li><span class="icon fa-phone"></span> <a href="#">(010) 6475-9540</a></li>
-          <li><span class="icon fa-envelope"></span> <a href="#">sec9590@gmail.com</a></li>
-          <li><span class="icon fa-map-marker"></span> Ezen Computer Academy</li>
-        </ul>
-      </div>
-    </footer>
-
-  <!-- Footer -->
-
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -189,22 +184,14 @@
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/creative.min.js"></script>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrolly.min.js"></script>
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
+
 
 </body>
 

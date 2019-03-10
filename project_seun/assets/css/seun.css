@@ -6,7 +6,7 @@
 }
 div p{
   font-size: 20px;
-  color : white;
+
 }
 .con_style{
   text-align: center;
@@ -36,4 +36,7 @@ div p{
 .panel-heading span {
 	margin-top: -20px;
 	font-size: 15px;
+}
+.personfont {
+  color : white;
 }
