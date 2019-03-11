@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>Favorite01</title>
 
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -16,13 +16,13 @@
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/seun.css" />
+  <link rel="stylesheet" href="css/seun.css" />
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
@@ -33,6 +33,7 @@
 </head>
 
 <body id="page-top">
+  <audio src="bgm.mp3" id="audio"> </audio>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -43,8 +44,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html" style="color:black">About</a>
+          <li class="nav-item dropdown" role="presentation">
+            <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black">Home <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="bar" role="menu">
+              <li class="menub">
+                <a class="nav-link" href="#about" style="color: black">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#Personality" style="color: black">Personality</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#favorite" style="color: black">Favorite</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#footer" style="color: black">Contect</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="favorite01.html" id="favorite01" style="color: #2582b3">Favorite01</a>
@@ -58,13 +73,16 @@
         </ul>
       </div>
     </div>
+    <!-- 배경음악 아이콘 -->
+    <i class="fas fa-1x fa-play " id="ficon" style="color : black; width:5px; margin-right:20px; margin-left:20px " onclick="controlplay()">&nbsp;</i>
   </nav>
 
+  <!-- favorite01 section -->
   <section class="page-section" id="favorite01" style="padding-top:50px">
-    <div class="container" >
-      <h2 class="text-center mt-0" style="font-weight:bold; color:#2582b3;">I like to go to a Cafe</h2>
+    <div class="container">
+      <h2 class="text-center mt-0" style="font-weight:bold; color:#2582b3;">Favorite01. 카페가기</h2>
       <hr style="background :  #8bc8e8 ;">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-6 col-md-3 text-center">
           <div class="mt-5">
             <i class="fas fa-4x fa-coffee text-primary mb-4"></i>
@@ -84,13 +102,11 @@
     </div>
   </section>
 
-
-
   <!-- Portfolio Section -->
   <section id="portfolio">
     <div class="container-fluid p-0">
-      <div class="row no-gutters">
-        <div class="col-lg-4 col-sm-6">
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box " href="images/portfolio/fullsize/1.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/1.jpg" alt="">
             <div class="portfolio-box-caption">
@@ -103,7 +119,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="images/portfolio/fullsize/2.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/2.jpg" alt="">
             <div class="portfolio-box-caption">
@@ -116,7 +132,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="images/portfolio/fullsize/3.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/3.jpg" alt="">
             <div class="portfolio-box-caption">
@@ -129,7 +145,9 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="w-100 d-none d-lg-block"></div>
+
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="images/portfolio/fullsize/4.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/4.jpg" alt="">
             <div class="portfolio-box-caption">
@@ -142,7 +160,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="images/portfolio/fullsize/5.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/5.jpg" alt="">
             <div class="portfolio-box-caption">
@@ -155,7 +173,7 @@
             </div>
           </a>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <a class="portfolio-box" href="images/portfolio/fullsize/6.jpg">
             <img class="img-fluid" src="images/portfolio/thumbnails/6.jpg" alt="">
             <div class="portfolio-box-caption p-3">
@@ -183,7 +201,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
-
+  <script src="js/seun.js"></script>
 
 
   <script src="assets/js/jquery.min.js"></script>

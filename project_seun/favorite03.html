@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>Creative - Start Bootstrap Theme</title>
+  <title>Favorite03</title>
   <style>
     .row {
       margin-top: 40px;
@@ -23,36 +22,39 @@
       margin-top: -20px;
       font-size: 15px;
     }
+
+    .card-text {
+      font-size: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
   </style>
-  <!-- Font Awesome Icons -->
-  <!-- Font Awesome Icons -->
+
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
   <!-- Google Fonts -->
-
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="assets/css/seun.css" />
+  <link rel="stylesheet" href="css/seun.css" />
 
   <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-
-
-
 </head>
 
 <body id="page-top">
-  <!-- Header -->
-
+  <!-- 배경음악 -->
+  <audio src="bgm.mp3" id="audio"> </audio>
 
   <!-- Menu -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -63,8 +65,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto my-2 my-lg-0">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html" style="color:black">About</a>
+          <li class="nav-item dropdown" role="presentation">
+            <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black">Home <span class="caret"></span></a>
+            <ul class="dropdown-menu" id="bar" role="menu">
+              <li class="menub">
+                <a class="nav-link" href="#about" style="color: black">About</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#Personality" style="color: black">Personality</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#favorite" style="color: black">Favorite</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#footer" style="color: black">Contect</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="favorite01.html" id="favorite01" style="color:black">Favorite01</a>
@@ -78,154 +94,136 @@
         </ul>
       </div>
     </div>
+    <i class="fas fa-1x fa-play " id="ficon" style="color : black; width:5px; margin-right:20px; margin-left:20px " onclick="controlplay()">&nbsp;</i>
   </nav>
-    <!-- Services Section -->
-  <section class="page-section" id="services"  style="padding-top:50px">
+
+
+  <!-- favorite03 Section -->
+  <section class="page-section" style="padding-top:50px; padding-bottom:30px">
     <div class="container">
-      <h2 class="text-center mt-0" style="font-weight:bold; color:#2582b3;">I like going on a trip</h2>
+      <h2 class="text-center mt-0" style="font-weight:bold; color:#2582b3;">Favorite03. 여행다니기</h2>
       <hr style="background :  #8bc8e8 ;">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title">2015년 1월 (8박 10일)</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-primary mb-3" style="max-width: 20rem; ">
+              <div class="card-header">2015년 1월 (8박 10일)
+                <span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span></div>
+              <div class="card-body text-primary">
+                <h4 class="card-title">태국(방콕, 파타야)&nbsp; ★★★</h4>
+                <p class="card-text">항공비제외하고 물가가 저렴하여 다양한 볼거리와 먹거리를 즐길 수 있었고, 이색체험도 하면서 여유로운 여행을 다녀왔습니다.
+                  다만 동남아 음식이 맞지 않았습니다</p>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">태국(방콕, 파타야)&nbsp; ★★★ </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="panel panel-success">
-              <div class="panel-heading">
-                <h3 class="panel-title">2016년 7월 (5박 6일)</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-secondary mb-3" style="max-width: 20rem;">
+              <div class="card-header">2016년 7월 (5박 6일)
+                <span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">일본(오사카, 교토)&nbsp; ★★★★★ </div>
+              <div class="card-body text-secondary">
+                <h4 class="card-title">일본(오사카, 교토)&nbsp; ★★★★★ </h4>
+                <p class="card-text">가까운 곳이고 쉽게 여행을 다녀올 수 있는 곳이었으며 음식이 맛있었고 유니버셜스튜디오가 제일 기억에 남습니다. 또한, 교토에선 일본의 풍경을 느낄 수 있습니다.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <h3 class="panel-title">2017년 8월 (4박 5일)</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-success mb-3" style="max-width: 20rem;">
+              <div class="card-header">2017년 8월 (4박 5일)
+                <span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">일본(도쿄)&nbsp; ★★★★ </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="panel panel-warning">
-              <div class="panel-heading">
-                <h3 class="panel-title">2018년 8월 (3박 4일)</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+              <div class="card-body text-success">
+                <h4 class="card-title">일본(도쿄)&nbsp; ★★★★</h4>
+                <p class="card-text">도쿄는 오사카와 마찬가지로 큰 차이는 없었으며 디즈니월드를 가볼 수 있는 기회가 되었고 교통도 편리하였습니다. <br><br></p>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">일본(후쿠오카)&nbsp; ★★★★ </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel panel-danger">
-              <div class="panel-heading">
-                <h3 class="panel-title">2019년 1월 (2박 3일)</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-danger mb-3" style="max-width: 20rem;">
+              <div class="card-header">2018년 8월 (3박 4일)
+                <span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span></div>
+              <div class="card-body text-danger">
+                <h4 class="card-title">일본(후쿠오카)&nbsp; ★★★★ </h4>
+                <p class="card-text"> 후쿠오카는 부산과 가까워 비행시간도 짧았고 도쿄와 오사카보단 작은 도시여서 짧은 시간동안에도 대부분을 둘러다 볼 수 있었고 지하철보단 버스를 타고 많이 다녔습니다.</p>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">일본(오키나와) ★★ </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title">2019년 미정</h3>
-                <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-warning mb-3" style="max-width: 20rem;">
+              <div class="card-header">2019년 1월 (2박 3일)
+                <span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span></div>
+              <div class="card-body text-warning">
+                <h4 class="card-title">일본(오키나와)&nbsp; ★★ </h4>
+                <p class="card-text">오키나와는 일본보다 더 밑에 있는 작은 섬, 동양의 하와이라고 불리는 곳이어서 그런지 일본느낌은 거의 나지 않았으며
+                  대체적으로 음식이 맛없었고 1월엔 봄/가을 날씨였지만 비가 자주왔습니다.</p>
               </div>
-              <div class="panel-body" style="font-size : 1.5em">유럽, 미국, 싱가포르 등</div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-4">
+            <div class="card border-info mb-3" style="max-width: 20rem;">
+              <div class="card-header">2019년 미정<span class="clickable" style="float:right"><i class="fas fa-1x fa-angle-down"></i></span></div>
+              <div class="card-body text-info">
+                <h4 class="card-title">유럽, 미국, 싱가포르 등</h4>
+                <p class="card-text">갈 수 있을지는 모르겠지만 시간이 된다면 꼭 저중에 한 곳은 가보고 싶습니다. <br><br><br><br></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
+  <!-- 사진 정렬 -->
   <div class="row">
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t1.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>후쿠오카</h3>
-          <span>Fukuoka</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t2.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>오키나와</h3>
-          <span>Okinawa</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t3.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>오사카</h3>
-          <span>Osaka</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t4.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>도쿄</h3>
-          <span>Tokyo</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t5.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>방콕</h3>
-          <span>Bangkok</span>
-        </div>
-      </a>
-    </div>
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-      <a class="image-gradient">
-        <figure>
-          <img src="images/t6.jpg" alt="" class="img-fluid">
-        </figure>
-        <div class="text">
-          <h3>파타야</h3>
-          <span>pattaya</span>
-        </div>
-      </a>
+    <div class="col-md-12 d-flex justify-content-center mb-5">
+      <button type="button" class="btn btn-outline-black waves-effect filter btn_style" data-rel="all" style="font-weight:bold; font-size:18pt; margin:20px">All</button>
+      <button type="button" class="btn btn-outline-black waves-effect filter btn_style" data-rel="1" style="font-weight:bold; font-size:18pt; margin:20px">Japan</button>
+      <button type="button" class="btn btn-outline-black waves-effect filter btn_style" data-rel="2" style="font-weight:bold; font-size:18pt; margin:20px">Thailand</button>
     </div>
   </div>
+
+  <!-- Grid row -->
+  <div class="gallery" id="gallery" style="width:80%; margin:0 auto">
+
+  <!-- Grid column -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t1.jpg" alt="Card image cap">
   </div>
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t2.jpg" alt="Card image cap">
   </div>
-
-
-  <!-- Portfolio Section -->
-
-
-
-  <!-- Footer -->
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t3.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t5.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t6.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t11.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t13.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t14.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t15.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 1">
+    <img class="img-fluid" src="images/t7.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t9.jpg" alt="Card image cap">
+  </div>
+  <div class="mb-3 pics animation all 2">
+    <img class="img-fluid" src="images/t12.jpg" alt="Card image cap">
+  </div>
+</div>
 
 
   <!-- Bootstrap core JavaScript -->
@@ -238,6 +236,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/creative.min.js"></script>
+  <script src="js/seun.js"></script>
 
   <!-- Custom scripts for this template -->
 
@@ -247,7 +246,6 @@
   <script src="assets/js/skel.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-
 
 
 </body>
