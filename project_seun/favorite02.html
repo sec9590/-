@@ -19,6 +19,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
   <!-- Plugin CSS -->
   <link rel="stylesheet" href="assets/css/main.css" />
@@ -27,6 +28,14 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
+
+<style>
+.fadeinleft {
+    opacity:0;
+    margin-left:-300px;
+    max-width:100%;
+  }
+  </style>
 
 </head>
 
@@ -47,16 +56,16 @@
             <a class="nav-link js-scroll-trigger dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: black">Home <span class="caret"></span></a>
             <ul class="dropdown-menu" id="bar" role="menu">
               <li class="menub">
-                <a class="nav-link" href="#about" style="color: black">About</a>
+                <a class="nav-link" href="index.html" style="color: black">About</a>
               </li>
               <li>
-                <a class="nav-link" href="#Personality" style="color: black">Personality</a>
+                <a class="nav-link" href="index.html" style="color: black">Personality</a>
               </li>
               <li>
-                <a class="nav-link" href="#favorite" style="color: black">Favorite</a>
+                <a class="nav-link" href="index.html" style="color: black">Favorite</a>
               </li>
               <li>
-                <a class="nav-link" href="#footer" style="color: black">Contect</a>
+                <a class="nav-link" href="index.html" style="color: black">Contect</a>
               </li>
             </ul>
           </li>
@@ -77,7 +86,7 @@
 
   <!-- favorite02 section -->
   <!-- 캐러셀 -->
-  <section class="page-section"  style="padding-top:50px; margin-bottom : 30px">
+  <section class="page-section"  style="padding:50px; margin-bottom : 30px">
     <div class="container">
       <div class="outer">
         <div class="inner1">
@@ -120,7 +129,7 @@
   </section>
 
 <!-- 상영영화 iframe -->
-  <section class="page-section bg-primary" id="movie" style="padding-top:80px">
+  <section class="page-section bg-primary" id="movie" style="padding:50px">
     <div class="container">
       <div class="outer">
         <div class="inner1">
@@ -132,8 +141,8 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid p-0" style="margin:0 auto; margin-top:-25px">
-      <div class="row justify-content-center">
+    <div class="container-fluid p-0 fadeinleft" style="margin:0 auto; margin-top:-25px">
+      <div class="row justify-content-center ">
         <div class="col-lg-10 col-sm-12">
           <iframe src="https://movie.naver.com/movie/running/current.nhn" width="100%" height="600px" scrolling="auto" style="border : 5px solid #2582b3"></iframe>
         </div>
@@ -141,6 +150,19 @@
     </div>
     <div>
   </section>
+  <footer id="footer">
+    <div class="inner" >
+      <h2 style="font-weight:bold">Get In Touch</h2>
+      <hr style="background :#2582b3 ;">
+      <br><br>
+
+      <ul class="actions">
+        <li><span class="icon fa-phone"></span> <a href="#">(010) 6475-9540</a></li>
+        <li><span class="icon fa-envelope"></span> <a href="#">sec9590@gmail.com</a></li>
+        <li><span class="icon fa-map-marker"></span> Ezen Computer Academy</li>
+      </ul>
+    </div>
+  </footer>
 
 
   <!-- Bootstrap core JavaScript -->
